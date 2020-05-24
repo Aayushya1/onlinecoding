@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"   xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" th:href="@{css/home.css}">
+		<script type="text/javascript" th:src="@{js/home.js}"></script>
+		<title>
+			Home
+		</title>
+	</head>
+	<body>
+<script type="text/javascript" th:src="@{js/home.js}"></script>
+		<div class="topnav">
+		  <a id="problems_list.html" class="active" onclick="myfun('problems_list.html')">Problems</a>
+		  <a id="upcoming_contests.html" onclick="myfun('upcoming_contests.html')">Upcoming Contests</a>
+		  <a id="leaderboard.html" onclick="myfun('leaderboard.html')">Leaderboard</a>
+		  <a id="discussion.html" onclick="myfun('discussion.html')">Discussion</a>
+		</div>
+
+		<div style="padding-top:16px" id="page">
+		<iframe th:src="problems_list.html" width="100%" height="400px" frameborder="0" id="myFrame"></iframe>
+		</div>
+	</body>
+</html>
+
