@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "abvroot/devopscalculator"
+        registry = "abvroot/onlinecode"
         registryCredential = 'docker-hub'
     }
   agent any
@@ -11,7 +11,7 @@ pipeline {
     stage('Clone GIT Repository') {
           steps{
                 logstash{
-                    git 'https://github.com/Aayushya1/devopscalculator.git'
+                    git 'https://github.com/Aayushya1/onlinecoding.git'
                 }
           }
     }
